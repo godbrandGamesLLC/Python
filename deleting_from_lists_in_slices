@@ -6,23 +6,23 @@
 #~~~~~~~~~~~~~~~Beginning of computations~~~~~~~~~~~~~~~~~~~~~~~
 
 #0.Creating a list
-list_original = [1,2,3,4,5,6,7,8,9,10]
+list_first = [1,2,3,4,5,6,7,8,9,10]
 
 #0A.Printing to test
-print("A. Original list  = ", list_original) #Prints - Original list  =  [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print("0A. list_first = ", list_first ) #Prints - 0A. list_first =  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 #1. Slice from the beginning to a spot on the list, this time the 4th element 
-del list_original[:4]
+del list_first [:4]
 
 #1A.Printing to test
-print("Original list is now = ", list_original) #Prints - Original list is now =  [1, 7, 8, 9]
+print("list_first is now = ", list_first) 
 
 #3. Deleting all the contents from the whole list
-del list_original[:]
+#del list_original[:]
 
 #3a. Printing to test
-print ("Original list is now empty = ", list_original) #Prints - Original list is now empty =  []
+#print ("Original list is now empty = ", list_original) #Prints - Original list is now empty =  []
 
 
 #~~~~~~~~~~~~~~~End of computations~~~~~~~~~~~~~~~~~~~~~~~
