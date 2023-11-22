@@ -18,6 +18,12 @@ del list_first [:4]
 #1A.Printing to test
 print("list_first is now = ", list_first) 
 
+#2. Slice from a chunk from somewhere in the middle, for now the 2nd and 4th item 
+del list_first[2:4]
+
+#2A.Printing to test
+print("list_first is now = ", list_first) 
+
 #3. Deleting all the contents from the whole list
 #del list_original[:]
 
