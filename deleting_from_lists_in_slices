@@ -28,13 +28,25 @@ print("")#spacing
 #3.Slice from somewhere to the end, here the second spot to the end
 del list_first[2:]
 
+#3A.Printing to test
+print("3A.Slice from somewhere to the end, this time '[2:]': list_first is now = ", list_first) 
+print("")#spacing 
+
 #4. Deleting all the contents from the whole list
-#del list_original[:]
+list_second = [91,62,9763,441,255,66,788,8,22,88]
 
-#4a. Printing to test
-#print ("Original list is now empty = ", list_original) #Prints - Original list is now empty =  []
+print("Whole second list = ", list_second)
+print("")#spacing
 
+#4A. Slicing the whole second list
+del list_second[:]
 
+#4B. Printing to test
+print("list_second after the whole slice 'del list_second[:]' = ", list_second)
+print("")#spacing
+
+#5. Thanks for watching
+print("#5 Like and subscribe!")
 #~~~~~~~~~~~~~~~End of computations~~~~~~~~~~~~~~~~~~~~~~~
 
 #=================The absolute end of this script==============================
