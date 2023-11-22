@@ -5,16 +5,17 @@
 
 #~~~~~~~~~~~~~~~Beginning of computations~~~~~~~~~~~~~~~~~~~~~~~
 
-#1.Creating a list
-list_original = [1,2,3,4,5,6,7,8,9]
+#0.Creating a list
+list_original = [1,2,3,4,5,6,7,8,9,10]
+
+#0A.Printing to test
+print("A. Original list  = ", list_original) #Prints - Original list  =  [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+#1. Slice from the beginning to a spot on the list, this time the 4th element 
+del list_original[:4]
 
 #1A.Printing to test
-print("Original list  = ", list_original) #Prints - Original list  =  [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-#2.Deleting from List in a slice
-del list_original[1:6]
-
-#2A.Printing to test
 print("Original list is now = ", list_original) #Prints - Original list is now =  [1, 7, 8, 9]
 
 #3. Deleting all the contents from the whole list
