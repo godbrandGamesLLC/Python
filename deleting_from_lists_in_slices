@@ -10,24 +10,28 @@ list_first = [1,2,3,4,5,6,7,8,9,10]
 
 #0A.Printing to test
 print("0A. list_first = ", list_first ) #Prints - 0A. list_first =  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
+print("")#spacing 
 
 #1. Slice from the beginning to a spot on the list, this time the 4th element 
 del list_first [:4]
 
 #1A.Printing to test
-print("list_first is now = ", list_first) 
-
+print("1A.Beginning to a spot: list_first is now = ", list_first) 
+print("")#spacing 
 #2. Slice from a chunk from somewhere in the middle, for now the 2nd and 4th item 
 del list_first[2:4]
 
 #2A.Printing to test
-print("list_first is now = ", list_first) 
+print("2A.Slice a middle chunk: list_first is now = ", list_first) 
+print("")#spacing 
 
-#3. Deleting all the contents from the whole list
+#3.Slice from somewhere to the end, here the second spot to the end
+del list_first[2:]
+
+#4. Deleting all the contents from the whole list
 #del list_original[:]
 
-#3a. Printing to test
+#4a. Printing to test
 #print ("Original list is now empty = ", list_original) #Prints - Original list is now empty =  []
 
 
