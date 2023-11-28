@@ -1,3 +1,7 @@
+#Company: Godbrand Games L.L.C.
+#Programmer: Akinwale Owi 
+#Program Purpose: Ask,read in, and print multiple types of data 
+
 #On my Windows CPU you press the 'Enter' key to accept the input data
 
 #Number of input types:3
@@ -5,7 +9,7 @@
 #Questions
 
 #Strings
-variable_string = input("Please enter a string = ") #One way to read in string input
+name_coder = input("Please enter a string = ") #One way to read in string input
 print()
 
 #Ints
@@ -19,7 +23,7 @@ print()
 
 #Printing output with variables
 print()
-print("Variable 1/string = ",variable_string)
+print("Variable 1/string = ",name_coder )
 print()
 print("Variable 2/int = ",variable_int)
 print()
