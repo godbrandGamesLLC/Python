@@ -33,8 +33,8 @@ drink02 = DigitalStorage("Coffee", 3)
 #~~End of data entries~~
 
 #~~~~~~~~print tests~~~~~~~~
-print(drink01.item_name) 
-print(drink01 .price)
+print("Pizza Flavor entered : ", drink01.item_name) 
+print("Original Price entered: ", drink01 .price)
 
 drink01.markup()
 
