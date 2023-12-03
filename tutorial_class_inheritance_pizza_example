@@ -15,9 +15,9 @@ class ActiveInventory:
   def prices_chrstimas(self):
       pass
       
-  def markup(self):
+  def wine(self):
       price_markup = self.price + 20
-      print("With a 20 dollar markup price is now = $", price_markup)
+      print("With a $20 win bottle, the cx's total comes to = $", price_markup)
 
 #End of class ActiveInventory:
 
@@ -32,18 +32,19 @@ drink01 = ActiveInventory("Cheese", 19.99)
 drink02 = DigitalStorage("Honey Hawaiian", 25)
 #~~End of data entries~~
 
-#~~~~~~~~Print testing our original class ActiveInventory~~~~~~~~
+#~~~~~~~~Beginning of print testing our original class ActiveInventory~~~~~~~~
 print("")
 print("~Print testing our original class ActiveInventory~")
 print("Pizza Flavor entered : ", drink01.item_name) 
 print("Original Price entered: ", drink01 .price)
 
-drink01.markup()
+drink01.wine()
+#~~~End of print testing our original class ActiveInventory~~~~~~~~
 
 #DigitalStorage(ActiveInventory) testing
 print()
 print("~DigitalStorage(ActiveInventory) Testing~")
 print(drink02.item_name) 
 print(drink02 .price)
-drink02.markup()
+drink02.wine()
 #_____________absolute end of the script________________
