@@ -29,10 +29,12 @@ class DigitalStorage(ActiveInventory):
 
 #~~Beginning of data entries~~         
 drink01 = ActiveInventory("Cheese", 19.99)
-drink02 = DigitalStorage("Honey Hawaiian", 23.99)
+drink02 = DigitalStorage("Honey Hawaiian", 25)
 #~~End of data entries~~
 
-#~~~~~~~~print tests~~~~~~~~
+#~~~~~~~~Print testing our original class ActiveInventory~~~~~~~~
+print("")
+print("~Print testing our original class ActiveInventory~")
 print("Pizza Flavor entered : ", drink01.item_name) 
 print("Original Price entered: ", drink01 .price)
 
