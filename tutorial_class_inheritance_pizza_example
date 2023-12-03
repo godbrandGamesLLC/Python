@@ -34,11 +34,15 @@ drink02 = DigitalStorage("Honey Hawaiian", 25)
 
 #~~~~~~~~Beginning of print testing our original class ActiveInventory~~~~~~~~
 print("")
-print("~Print testing our original class ActiveInventory~")
+print("~Beginning of print testing our original class ActiveInventory~")
+print()
 print("Pizza Flavor entered : ", drink01.item_name) 
 print("Original Price entered: ", drink01 .price)
 
 drink01.wine()
+print()
+print("~End of print testing our original class ActiveInventory~")
+
 #~~~End of print testing our original class ActiveInventory~~~~~~~~
 
 #DigitalStorage(ActiveInventory) testing
