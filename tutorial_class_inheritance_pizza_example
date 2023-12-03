@@ -28,8 +28,8 @@ class DigitalStorage(ActiveInventory):
 #End of class:DigitalStorage(ActiveInventory)
 
 #~~Beginning of data entries~~         
-drink01 = ActiveInventory("Seltzer", 2)
-drink02 = DigitalStorage("Coffee", 3)
+drink01 = ActiveInventory("Cheese", 19.99)
+drink02 = DigitalStorage("Honey Hawaiian", 23.99)
 #~~End of data entries~~
 
 #~~~~~~~~print tests~~~~~~~~
