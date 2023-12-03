@@ -34,21 +34,23 @@ drink02 = DigitalStorage("Honey Hawaiian", 25)
 
 #~~~~~~~~Beginning of print testing our original class ActiveInventory~~~~~~~~
 print("")
-print("~Beginning of print testing our original class ActiveInventory~")
+print("~~~Beginning of print testing our original class ActiveInventory~~~")
 print()
 print("Pizza Flavor entered : ", drink01.item_name) 
-print("Original Price entered: ", drink01 .price)
+print("Original Price entered: $", drink01 .price)
 
 drink01.wine()
 print()
-print("~End of print testing our original class ActiveInventory~")
+print("~~~End of print testing our original class ActiveInventory~~~")
 
 #~~~End of print testing our original class ActiveInventory~~~~~~~~
 
-#DigitalStorage(ActiveInventory) testing
+#~~~~~~~~Beginning of DigitalStorage(ActiveInventory) testing
 print()
-print("~DigitalStorage(ActiveInventory) Testing~")
-print(drink02.item_name) 
-print(drink02 .price)
+print("~~~~Beginning of testing our 1st class made with inheritance: DigitalStorage(ActiveInventory)~~~")
+print()
+print("Pizza Flavor entered : ",drink02.item_name) 
+print("Original Price entered: $",drink02 .price)
 drink02.wine()
+print("~~~~End of DigitalStorage(ActiveInventory) Testing~~~")
 #_____________absolute end of the script________________
