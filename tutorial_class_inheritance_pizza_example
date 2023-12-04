@@ -21,15 +21,30 @@ class FirstMeal:
 
 #~~~End of class FirstMeal:~~~
 
-#Beginning of class: SecondMeal(ActiveInventory)
+#Beginning of class: SecondMeal(FirstMeal)
 class SecondMeal(FirstMeal):
     pass
 
-#~~~End of class:DigitalStorage(FirstMeal)
+#~~~End of class:SecondMeal(FirstMeal)
+
+
+#Beginning of class: SecondMeal(FirstMeal)
+class SecondMeal(FirstMeal):
+    pass
+
+#~~~End of class:SecondMeal(FirstMeal)
+
+
+#Beginning of class: Desserts(FirstMeal)
+class Desserts(FirstMeal):
+    pass
+
+#~~~End of class:SecondMeal(FirstMeal)
 
 #~~Beginning of data entries~~         
 drink01 = FirstMeal("Cheese", 19.99)
 drink02 = SecondMeal("Honey Hawaiian", 25)
+drink03 = Desserts("Brownies: Peanut Butter Chocolate Lava ", 25)
 #~~End of data entries~~
 
 #~~~~~~~~Beginning of print testing our original class FirstMeal~~~~~~~~
@@ -45,13 +60,27 @@ print("~~~End of print testing our original class FirstMeal~~~")
 
 #~~~End of print testing our original class FirstMeal~~~~~~~~
 
-#~~~~~~~~Beginning of SecondMeale(FirstMeal) testing
+#~~~Beginning of SecondMeale(FirstMeal) testing
 print()
-print("~~~~Beginning of testing our 1st class made with inheritance: SecondMeal(FirstMeal)~~~")
+print("~~(1)~~Beginning of testing our 1st class made with inheritance: SecondMeal(FirstMeal)~~~")
 print()
 print("Pizza Flavor entered : ",drink02.item_name) 
 print("Original Price entered: $",drink02 .price)
 drink02.wine()
 print()
-print("~~~End of testing our 1st class made with inheritance: SecondMeal(FirstMeal)~~~")
+print("~(1)~~End of testing our 1st class made with inheritance: SecondMeal(FirstMeal)~~~")
+
+#~~~End of SecondMeale(FirstMeal) testing
+
+#~~~Beginning of SecondMeale(FirstMeal) testing
+print()
+print("~~(2)~~Beginning of testing our 2nd class made with inheritance: Desserts(FirstMeal)~~~")
+print()
+print("Pizza Flavor entered : ",drink02.item_name) 
+print("Original Price entered: $",drink02 .price)
+drink02.wine()
+print()
+print("~(2)~~End of testing our 2nd class made with inheritance: Desserts(FirstMeal)~~~")
+
+#~~~End of SecondMeale(FirstMeal) testing
 #_____________absolute end of the script________________
