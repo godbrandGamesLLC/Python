@@ -10,10 +10,6 @@ class FirstMeal:
   def __init__(self, item_name, price):
     self. item_name =  item_name
     self.price = price
-    
-   #object with pass in it
-  def prices_chrstimas(self):
-      pass
       
   def tax(self):
       price_markup = self.price + self.price* 0.06
@@ -26,14 +22,6 @@ class SecondMeal(FirstMeal):
     pass
 
 #~~~End of class:SecondMeal(FirstMeal)
-
-
-#Beginning of class: SecondMeal(FirstMeal)
-class SecondMeal(FirstMeal):
-    pass
-
-#~~~End of class:SecondMeal(FirstMeal)
-
 
 #Beginning of class: Desserts(FirstMeal)
 class Desserts(FirstMeal):
