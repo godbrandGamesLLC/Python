@@ -34,24 +34,24 @@ drink02 = SecondMeal("Honey Hawaiian", 25)
 
 #~~~~~~~~Beginning of print testing our original class FirstMeal~~~~~~~~
 print("")
-print("~~~Beginning of print testing our original class ActiveInventory~~~")
+print("~~~Beginning of print testing our original class FirstMeal~~~")
 print()
 print("Pizza Flavor entered : ", drink01.item_name) 
 print("Original Price entered: $", drink01 .price)
 
 drink01.wine()
 print()
-print("~~~End of print testing our original class ActiveInventory~~~")
+print("~~~End of print testing our original class FirstMeal~~~")
 
-#~~~End of print testing our original class ActiveInventory~~~~~~~~
+#~~~End of print testing our original class FirstMeal~~~~~~~~
 
-#~~~~~~~~Beginning of SecondMeale(ActiveInventory) testing
+#~~~~~~~~Beginning of SecondMeale(FirstMeal) testing
 print()
-print("~~~~Beginning of testing our 1st class made with inheritance: SecondMeal(ActiveInventory)~~~")
+print("~~~~Beginning of testing our 1st class made with inheritance: SecondMeal(FirstMeal)~~~")
 print()
 print("Pizza Flavor entered : ",drink02.item_name) 
 print("Original Price entered: $",drink02 .price)
 drink02.wine()
 print()
-print("~~~~End of DigitalStorage(ActiveInventory) Testing~~~")
+print("~~~End of testing our 1st class made with inheritance: SecondMeal(FirstMeal)~~~")
 #_____________absolute end of the script________________
