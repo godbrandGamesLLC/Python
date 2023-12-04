@@ -42,8 +42,8 @@ class Desserts(FirstMeal):
 
 #~~~End of class:SecondMeal(FirstMeal)
 
-#~~Beginning of data entries~~         
-drink01 = FirstMeal("Cheese", 19.99)
+#~~Beginning of data entries~~        
+item01_desired = FirstMeal("Cheese", 19.99)
 drink02 = SecondMeal("Honey Hawaiian", 25)
 drink03 = Desserts("Brownies: Peanut Butter Chocolate Lava ", 12.99)
 #~~End of data entries~~
@@ -52,10 +52,10 @@ drink03 = Desserts("Brownies: Peanut Butter Chocolate Lava ", 12.99)
 print("")
 print("~~~Beginning of print testing our original class FirstMeal~~~")
 print()
-print("Pizza Flavor entered : ", drink01.item_name) 
-print("Original Price entered: $", drink01 .price)
+print("Pizza Flavor entered : ", item01_desired.item_name) 
+print("Original Price entered: $", item01_desired.price)
 
-drink01.tax()
+item01_desired.tax()
 print()
 print("~~~End of print testing our original class FirstMeal~~~")
 
