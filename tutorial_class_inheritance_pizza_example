@@ -75,6 +75,7 @@ print("~(1)~~End of testing our 1st class made with inheritance: SecondMeal(Firs
 
 #~~~Beginning of SecondMeale(FirstMeal) testing
 print()
+print()
 print("~~(2)~~Beginning of testing our 2nd class made with inheritance: Desserts(FirstMeal)~~~")
 print()
 print("Dessert entered : ",drink03.item_name) 
