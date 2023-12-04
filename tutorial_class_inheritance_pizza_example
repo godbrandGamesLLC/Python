@@ -5,7 +5,7 @@
 #program purpose: Build a class using inheritance
 #______________________
 
-class ActiveInventory:
+class FirstMeal:
     
   def __init__(self, item_name, price):
     self. item_name =  item_name
@@ -19,20 +19,20 @@ class ActiveInventory:
       price_markup = self.price + 20
       print("With a $20 win bottle, the cx's total comes to = $", price_markup)
 
-#End of class ActiveInventory:
+#~~~End of class FirstMeal:~~~
 
-#Beginning of class: DigitalStorage(ActiveInventory)
-class DigitalStorage(ActiveInventory):
+#Beginning of class: SecondMeal(ActiveInventory)
+class SecondMeal(FirstMeal):
     pass
 
-#End of class:DigitalStorage(ActiveInventory)
+#~~~End of class:DigitalStorage(FirstMeal)
 
 #~~Beginning of data entries~~         
-drink01 = ActiveInventory("Cheese", 19.99)
-drink02 = DigitalStorage("Honey Hawaiian", 25)
+drink01 = FirstMeal("Cheese", 19.99)
+drink02 = SecondMeal("Honey Hawaiian", 25)
 #~~End of data entries~~
 
-#~~~~~~~~Beginning of print testing our original class ActiveInventory~~~~~~~~
+#~~~~~~~~Beginning of print testing our original class FirstMeal~~~~~~~~
 print("")
 print("~~~Beginning of print testing our original class ActiveInventory~~~")
 print()
@@ -45,12 +45,13 @@ print("~~~End of print testing our original class ActiveInventory~~~")
 
 #~~~End of print testing our original class ActiveInventory~~~~~~~~
 
-#~~~~~~~~Beginning of DigitalStorage(ActiveInventory) testing
+#~~~~~~~~Beginning of SecondMeale(ActiveInventory) testing
 print()
-print("~~~~Beginning of testing our 1st class made with inheritance: DigitalStorage(ActiveInventory)~~~")
+print("~~~~Beginning of testing our 1st class made with inheritance: SecondMeal(ActiveInventory)~~~")
 print()
 print("Pizza Flavor entered : ",drink02.item_name) 
 print("Original Price entered: $",drink02 .price)
 drink02.wine()
+print()
 print("~~~~End of DigitalStorage(ActiveInventory) Testing~~~")
 #_____________absolute end of the script________________
