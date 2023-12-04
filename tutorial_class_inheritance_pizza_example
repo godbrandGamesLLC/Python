@@ -15,9 +15,9 @@ class FirstMeal:
   def prices_chrstimas(self):
       pass
       
-  def wine(self):
-      price_markup = self.price + 20
-      print("With a $20 win bottle, the cx's total comes to = $", price_markup)
+  def tax(self):
+      price_markup = self.price + self.price* 0.06
+      print("With the current florida tax rate: the cx's total comes to = $", price_markup)
 
 #~~~End of class FirstMeal:~~~
 
@@ -38,13 +38,14 @@ class SecondMeal(FirstMeal):
 #Beginning of class: Desserts(FirstMeal)
 class Desserts(FirstMeal):
     pass
+    
 
 #~~~End of class:SecondMeal(FirstMeal)
 
 #~~Beginning of data entries~~         
 drink01 = FirstMeal("Cheese", 19.99)
 drink02 = SecondMeal("Honey Hawaiian", 25)
-drink03 = Desserts("Brownies: Peanut Butter Chocolate Lava ", 25)
+drink03 = Desserts("Brownies: Peanut Butter Chocolate Lava ", 12.99)
 #~~End of data entries~~
 
 #~~~~~~~~Beginning of print testing our original class FirstMeal~~~~~~~~
@@ -54,7 +55,7 @@ print()
 print("Pizza Flavor entered : ", drink01.item_name) 
 print("Original Price entered: $", drink01 .price)
 
-drink01.wine()
+drink01.tax()
 print()
 print("~~~End of print testing our original class FirstMeal~~~")
 
@@ -66,7 +67,7 @@ print("~~(1)~~Beginning of testing our 1st class made with inheritance: SecondMe
 print()
 print("Pizza Flavor entered : ",drink02.item_name) 
 print("Original Price entered: $",drink02 .price)
-drink02.wine()
+drink02.tax()
 print()
 print("~(1)~~End of testing our 1st class made with inheritance: SecondMeal(FirstMeal)~~~")
 
@@ -76,9 +77,10 @@ print("~(1)~~End of testing our 1st class made with inheritance: SecondMeal(Firs
 print()
 print("~~(2)~~Beginning of testing our 2nd class made with inheritance: Desserts(FirstMeal)~~~")
 print()
-print("Pizza Flavor entered : ",drink02.item_name) 
-print("Original Price entered: $",drink02 .price)
-drink02.wine()
+print("Dessert entered : ",drink03.item_name) 
+print("Original Price entered: $",drink03 .price)
+drink03.tax()
+
 print()
 print("~(2)~~End of testing our 2nd class made with inheritance: Desserts(FirstMeal)~~~")
 
