@@ -44,8 +44,8 @@ class Desserts(FirstMeal):
 
 #~~Beginning of data entries~~        
 item01_desired = FirstMeal("Cheese", 19.99)
-drink02 = SecondMeal("Honey Hawaiian", 25)
-drink03 = Desserts("Brownies: Peanut Butter Chocolate Lava ", 12.99)
+item02_desired = SecondMeal("Honey Hawaiian", 25)
+item03_desired  = Desserts("Brownies: Peanut Butter Chocolate Lava ", 12.99)
 #~~End of data entries~~
 
 #~~~~~~~~Beginning of print testing our original class FirstMeal~~~~~~~~
@@ -65,9 +65,9 @@ print("~~~End of print testing our original class FirstMeal~~~")
 print()
 print("~~(1)~~Beginning of testing our 1st class made with inheritance: SecondMeal(FirstMeal)~~~")
 print()
-print("Pizza Flavor entered : ",drink02.item_name) 
-print("Original Price entered: $",drink02 .price)
-drink02.tax()
+print("Pizza Flavor entered : ",item02_desired .item_name) 
+print("Original Price entered: $",item02_desired .price)
+item02_desired .tax()
 print()
 print("~(1)~~End of testing our 1st class made with inheritance: SecondMeal(FirstMeal)~~~")
 
@@ -78,9 +78,9 @@ print()
 print()
 print("~~(2)~~Beginning of testing our 2nd class made with inheritance: Desserts(FirstMeal)~~~")
 print()
-print("Dessert entered : ",drink03.item_name) 
-print("Original Price entered: $",drink03 .price)
-drink03.tax()
+print("Dessert entered : ",item03_desired.item_name) 
+print("Original Price entered: $",item03_desired .price)
+item03_desired.tax()
 
 print()
 print("~(2)~~End of testing our 2nd class made with inheritance: Desserts(FirstMeal)~~~")
