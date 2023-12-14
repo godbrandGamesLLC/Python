@@ -38,6 +38,8 @@ class FootballPlayerAttritbutes(ABC):
 
 #~~~~~End of FootballPlayerAttritbutes(ABC):class~~~~
 
+#~~~~~Beginning of class Kickers(FootballPlayerAttritbutes):~~~~
+
 class Kickers(FootballPlayerAttritbutes):
 
     def __init__(self,  kicking_strength, kicking_accuracy):
@@ -57,11 +59,15 @@ class Kickers(FootballPlayerAttritbutes):
     def speed(self):
         self.speed_rating = 50
         print("bare minimum speed unless injured speed is : ", self.speed_rating)
+        
+#~~~~~End ofclass Kickers(FootballPlayerAttritbutes):~~~~
 
-#~~~End of class building~~~
+#~~~~~~~~~~~~End of class building~~~~~~~~~
 
-#~~~Data adds~~~~
+#~~~Beginning of Data adds~~~~~~
 SantanaLefty = Kickers(98,87)
+
+#~~~End of Data adds~~~~~~
 
 #~~Print Testing~~
 SantanaLefty.speed()#pure abstract class testing
