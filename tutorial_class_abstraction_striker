@@ -18,11 +18,18 @@ from abc import ABC, abstractmethod
 class SoccerPlayerAttritbutes(ABC):
 
     
-    def __init__(self, name_player, strength):
-        self.name_player = name_player
-        self.strength = strength
+    def __init__(self, overall_player, special_move):
+        pass
           
 
+    def info_basic(self):
+        
+        name_player ="Godbrand Striker"
+        number_jersey_current = 0
+        
+        print("Player Name:", name_player)
+        print("Current jersey Num:", number_jersey_current )
+        
     @abstractmethod
     def attribute_shooting(self):
         throwing_ability = 40
@@ -31,11 +38,10 @@ class SoccerPlayerAttritbutes(ABC):
     @abstractmethod
     def kicking_ability(self):
                   pass
-    
-    def speed(self):
-        self.speed_rating = 85
-        print("A fast striker's speed is usually at least: > ", self.speed_rating)
 
+ 
+        #self.speed_rating = 85
+       
 #~~~~~End of SoccerPlayerAttritbutes(ABC):~~~~
 
 #~~~~~Beginning of class Kickers(FootballPlayerAttritbutes):~~~~
@@ -48,13 +54,12 @@ class SpeedyStrikers(SoccerPlayerAttritbutes):
 
 
     def attribute_shooting(self):
-            pass
+            print("Shooting:")
 
     def kicking_ability(self):
           pass
           
-          
-    
+
    
         
 #~~~~~End ofclass Kickers(FootballPlayerAttritbutes):~~~~
@@ -67,7 +72,8 @@ SantanaLefty = SpeedyStrikers('Godbrand Games',87)
 #~~~End of Data adds~~~~~~
 
 #~~Print Testing~~
-SantanaLefty.speed()#pure abstract class testing
+SantanaLefty.info_basic()
+
 
 SantanaLefty.attribute_shooting()#abstract class in Kickers test: it just gets ignored, not even a blank space
 
