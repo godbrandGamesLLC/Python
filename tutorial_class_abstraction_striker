@@ -14,7 +14,7 @@ from abc import ABC, abstractmethod
 
 #~~~beginning of class building~~~
 
-#~~~~~Beginning of FootballPlayerAttritbutes(ABC):class~~~~
+#~~~~~Beginning of SoccerPlayerAttritbutes(ABC):~~~~
 class SoccerPlayerAttritbutes(ABC):
 
     
@@ -36,7 +36,7 @@ class SoccerPlayerAttritbutes(ABC):
         self.speed_rating = 50
         print("bare minimum speed unless injured speed is : ", self.speed_rating)
 
-#~~~~~End of FootballPlayerAttritbutes(ABC):class~~~~
+#~~~~~End of SoccerPlayerAttritbutes(ABC):~~~~
 
 #~~~~~Beginning of class Kickers(FootballPlayerAttritbutes):~~~~
 
