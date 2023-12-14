@@ -63,7 +63,7 @@ class SpeedyStrikers(SoccerPlayerAttritbutes):
 #~~~~~~~~~~~~End of class building~~~~~~~~~
 
 #~~~Beginning of Data adds~~~~~~
-SantanaLefty = SpeedyStrikers(98,87)
+SantanaLefty = SpeedyStrikers('Godbrand Games',87)
 
 #~~~End of Data adds~~~~~~
 
