@@ -15,7 +15,7 @@ from abc import ABC, abstractmethod
 #~~~beginning of class building~~~
 
 #~~~~~Beginning of FootballPlayerAttritbutes(ABC):class~~~~
-class FootballPlayerAttritbutes(ABC):
+class SoccerPlayerAttritbutes(ABC):
 
     
     def __init__(self, speed_rating, strength):
@@ -40,7 +40,7 @@ class FootballPlayerAttritbutes(ABC):
 
 #~~~~~Beginning of class Kickers(FootballPlayerAttritbutes):~~~~
 
-class Kickers(FootballPlayerAttritbutes):
+class Kickers(SoccerPlayerAttritbutes):
 
     def __init__(self,  kicking_strength, kicking_accuracy):
         self.kicking_strength = kicking_strength
@@ -56,9 +56,7 @@ class Kickers(FootballPlayerAttritbutes):
           print("week 1 kicking_accuracy = ", self.kicking_accuracy)
           
     
-    def speed(self):
-        self.speed_rating = 50
-        print("bare minimum speed unless injured speed is : ", self.speed_rating)
+   
         
 #~~~~~End ofclass Kickers(FootballPlayerAttritbutes):~~~~
 
