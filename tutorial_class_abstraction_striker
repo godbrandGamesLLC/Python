@@ -12,7 +12,9 @@ from abc import ABC, abstractmethod
 #beginning of computations
 
 
-#~~~beginningof class building~~~
+#~~~beginning of class building~~~
+
+#~~~~~Beginning of FootballPlayerAttritbutes(ABC):class~~~~
 class FootballPlayerAttritbutes(ABC):
 
     
@@ -22,7 +24,7 @@ class FootballPlayerAttritbutes(ABC):
           
 
     @abstractmethod
-    def throwing_ability(self):
+    def shooting(self):
         throwing_ability = 40
         print("So everyone can complete a wide open pass, throwing_ability: ", throwing_ability)
    
@@ -34,7 +36,7 @@ class FootballPlayerAttritbutes(ABC):
         self.speed_rating = 50
         print("bare minimum speed unless injured speed is : ", self.speed_rating)
 
-#end of computations
+#~~~~~End of FootballPlayerAttritbutes(ABC):class~~~~
 
 class Kickers(FootballPlayerAttritbutes):
 
@@ -43,7 +45,7 @@ class Kickers(FootballPlayerAttritbutes):
         self.kicking_accuracy = kicking_accuracy
 
 
-    def throwing_ability(self):
+    def shooting(self):
             pass
 
     def kicking_ability(self):
@@ -64,7 +66,7 @@ SantanaLefty = Kickers(98,87)
 #~~Print Testing~~
 SantanaLefty.speed()#pure abstract class testing
 
-SantanaLefty.throwing_ability()#abstract class in Kickers test: it just gets ignored, not even a blank space
+SantanaLefty.shooting()#abstract class in Kickers test: it just gets ignored, not even a blank space
 
 SantanaLefty.kicking_ability()#making sure Kickers can take additions,it can
 
