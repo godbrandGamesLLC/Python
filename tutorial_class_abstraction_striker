@@ -40,7 +40,7 @@ class SoccerPlayerAttritbutes(ABC):
 
 #~~~~~Beginning of class Kickers(FootballPlayerAttritbutes):~~~~
 
-class Kickers(SoccerPlayerAttritbutes):
+class SpeedyStrikers(SoccerPlayerAttritbutes):
 
     def __init__(self,  kicking_strength, kicking_accuracy):
         self.kicking_strength = kicking_strength
@@ -63,7 +63,7 @@ class Kickers(SoccerPlayerAttritbutes):
 #~~~~~~~~~~~~End of class building~~~~~~~~~
 
 #~~~Beginning of Data adds~~~~~~
-SantanaLefty = Kickers(98,87)
+SantanaLefty = SpeedyStrikers(98,87)
 
 #~~~End of Data adds~~~~~~
 
