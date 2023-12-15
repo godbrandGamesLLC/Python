@@ -16,7 +16,7 @@ from abc import ABC, abstractmethod
 
 #~~~beginning of class building~~~
 
-#~~~~~Beginning of SoccerPlayerAttritbutes(ABC):~~~~
+#~~~~~Beginning of class SoccerPlayerAttritbutes(ABC):~~~~
 class SoccerPlayerAttritbutes(ABC):
 
     
@@ -58,9 +58,9 @@ class SoccerPlayerAttritbutes(ABC):
         pass
         #overall= (attribute_shooting + passing_ability 
          
-#~~~~~End of SoccerPlayerAttritbutes(ABC):~~~~
+#~~~~~End of class SoccerPlayerAttritbutes(ABC):~~~~
 
-#~~~~~Beginning of class Kickers(FootballPlayerAttritbutes):~~~~
+#~~~~~Beginning of class SpeedyStrikers(SoccerPlayerAttritbutes):~~~~
 
 class SpeedyStrikers(SoccerPlayerAttritbutes):
 
@@ -90,7 +90,7 @@ class SpeedyStrikers(SoccerPlayerAttritbutes):
     def overall_player(self):
           pass
         
-#~~~~~End ofclass Kickers(FootballPlayerAttritbutes):~~~~
+#~~~~~End of class SpeedyStrikers(SoccerPlayerAttritbutes)~~~~
 
 #~~~~~~~~~~~~End of class building~~~~~~~~~
 
