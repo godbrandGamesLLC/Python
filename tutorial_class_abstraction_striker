@@ -34,42 +34,52 @@ class SoccerPlayerAttritbutes(ABC):
         
     @abstractmethod
     def attribute_shooting(self):
-        ability_shooting = 70
-        print("So everyone can complete a wide open pass, throwing_ability: ", throwing_ability)
+        pass
+        #avg player =75
+       
    
     @abstractmethod
-    def kicking_ability(self):
-                  pass
-
+    def passing_ability(self):
+        pass
+         #avg player =75
+    
     @abstractmethod
     def defense_ability(self):
-                  pass
-        #self.speed_rating = 85
-       
+        pass
+         #avg player =75
+    
+    @abstractmethod
+    def defense_ability(self):
+        pass   
+         #avg player =75
+         
+         
 #~~~~~End of SoccerPlayerAttritbutes(ABC):~~~~
 
 #~~~~~Beginning of class Kickers(FootballPlayerAttritbutes):~~~~
 
 class SpeedyStrikers(SoccerPlayerAttritbutes):
 
-    def __init__(self,  speed, shooting):
+    def __init__(self, name_player,speed, shooting):
+        self.name_player = name_player
         self.speed =  speed
         self.shooting = shooting
 
     def info_jersey(self):
-       pass
+         print("Player Name:", self.name_player)
    
-    def attribute_speed(self):
-       
-            print("New speed rating:", self.speed)
+    def passing_ability(self):
+        pass
     
     def attribute_shooting(self):
             #ability_shooting = 85
             print("New shooting rating:",self.shooting)
+            
+    def attribute_speed(self):
+       
+            print("New speed rating:", self.speed)
+    
 
-    def kicking_ability(self):
-          pass
-          
     def defense_ability(self):
           pass
 
@@ -80,15 +90,15 @@ class SpeedyStrikers(SoccerPlayerAttritbutes):
 #~~~~~~~~~~~~End of class building~~~~~~~~~
 
 #~~~Beginning of Data adds~~~~~~
-SantanaLefty = SpeedyStrikers(94,87)
+RealPlayer = SpeedyStrikers('G.Games L.L.C.', 94,87)
 
 #~~~End of Data adds~~~~~~
 
 #~~Print Testing~~
-SantanaLefty.info_jersey()
+RealPlayer.info_jersey()
 
-SantanaLefty.attribute_speed()
-SantanaLefty.attribute_shooting()#abstract class in Kickers test: it just gets ignored, not even a blank space
+RealPlayer.attribute_speed()
+RealPlayer.attribute_shooting()#abstract class in Kickers test: it just gets ignored, not even a blank space
 
 
         
