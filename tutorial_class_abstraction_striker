@@ -39,20 +39,24 @@ class SoccerPlayerAttritbutes(ABC):
        
    
     @abstractmethod
-    def passing_ability(self):
+    def attribute_passing(self):
         pass
          #avg player =75
     
     @abstractmethod
-    def defense_ability(self):
+    def attribute_defense(self):
         pass
          #avg player =75
     
     @abstractmethod
-    def defense_ability(self):
+    def attribute_speed(self):
         pass   
          #avg player =75
          
+    @abstractmethod
+    def overall_player(self):
+        pass
+        #overall= (attribute_shooting + passing_ability 
          
 #~~~~~End of SoccerPlayerAttritbutes(ABC):~~~~
 
@@ -68,7 +72,7 @@ class SpeedyStrikers(SoccerPlayerAttritbutes):
     def info_jersey(self):
          print("Player Name:", self.name_player)
    
-    def passing_ability(self):
+    def attribute_passing(self):
         pass
     
     def attribute_shooting(self):
@@ -80,10 +84,11 @@ class SpeedyStrikers(SoccerPlayerAttritbutes):
             print("New speed rating:", self.speed)
     
 
-    def defense_ability(self):
+    def attribute_defense(self):
           pass
 
-   
+    def overall_player(self):
+          pass
         
 #~~~~~End ofclass Kickers(FootballPlayerAttritbutes):~~~~
 
@@ -98,8 +103,8 @@ RealPlayer = SpeedyStrikers('G.Games L.L.C.', 94,87)
 RealPlayer.info_jersey()
 
 RealPlayer.attribute_speed()
-RealPlayer.attribute_shooting()#abstract class in Kickers test: it just gets ignored, not even a blank space
-
+RealPlayer.attribute_shooting()
+RealPlayer.overall_player()
 
         
 #from the original abstraction class
