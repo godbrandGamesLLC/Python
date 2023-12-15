@@ -1,3 +1,5 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
 #Ultimate beginning of script
 
 #Company: Godbrand Games L.L.C.
@@ -18,13 +20,13 @@ from abc import ABC, abstractmethod
 class SoccerPlayerAttritbutes(ABC):
 
     
-    def __init__(self, overall_player, special_move):
+    def __init__(self, attribute_one, attribute_two):
         pass
           
-
-    def info_basic(self):
+    @abstractmethod
+    def info_jersey(self):
         
-        name_player ="Godbrand Striker"
+        name_player ="G.Games L.L.C."
         number_jersey_current = 0
         
         print("Player Name:", name_player)
@@ -32,14 +34,16 @@ class SoccerPlayerAttritbutes(ABC):
         
     @abstractmethod
     def attribute_shooting(self):
-        throwing_ability = 40
+        ability_shooting = 70
         print("So everyone can complete a wide open pass, throwing_ability: ", throwing_ability)
    
     @abstractmethod
     def kicking_ability(self):
                   pass
 
- 
+    @abstractmethod
+    def defense_ability(self):
+                  pass
         #self.speed_rating = 85
        
 #~~~~~End of SoccerPlayerAttritbutes(ABC):~~~~
@@ -48,17 +52,26 @@ class SoccerPlayerAttritbutes(ABC):
 
 class SpeedyStrikers(SoccerPlayerAttritbutes):
 
-    def __init__(self,  kicking_strength, kicking_accuracy):
-        self.kicking_strength = kicking_strength
-        self.kicking_accuracy = kicking_accuracy
+    def __init__(self,  speed, shooting):
+        self.speed =  speed
+        self.shooting = shooting
 
-
+    def info_jersey(self):
+       pass
+   
+    def attribute_speed(self):
+       
+            print("New speed rating:", self.speed)
+    
     def attribute_shooting(self):
-            print("Shooting:")
+            #ability_shooting = 85
+            print("New shooting rating:",self.shooting)
 
     def kicking_ability(self):
           pass
           
+    def defense_ability(self):
+          pass
 
    
         
@@ -67,14 +80,14 @@ class SpeedyStrikers(SoccerPlayerAttritbutes):
 #~~~~~~~~~~~~End of class building~~~~~~~~~
 
 #~~~Beginning of Data adds~~~~~~
-SantanaLefty = SpeedyStrikers('Godbrand Games',87)
+SantanaLefty = SpeedyStrikers(94,87)
 
 #~~~End of Data adds~~~~~~
 
 #~~Print Testing~~
-SantanaLefty.info_basic()
+SantanaLefty.info_jersey()
 
-
+SantanaLefty.attribute_speed()
 SantanaLefty.attribute_shooting()#abstract class in Kickers test: it just gets ignored, not even a blank space
 
 
