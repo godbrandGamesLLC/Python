@@ -64,16 +64,23 @@ class SoccerPlayerAttritbutes(ABC):
 
 class SpeedyStrikers(SoccerPlayerAttritbutes):
 
+
+   
+    
     def __init__(self, name_player,speed, shooting):
         self.name_player = name_player
         self.speed =  speed
         self.shooting = shooting
+        
 
     def info_jersey(self):
          print("Player Name:", self.name_player)
    
     def attribute_passing(self):
-        pass
+        global passing_attribute
+        passing_attribute = 80
+        print("passing attribute: ",passing_attribute)
+        #average 75
     
     def attribute_shooting(self):
             #ability_shooting = 85
@@ -85,26 +92,34 @@ class SpeedyStrikers(SoccerPlayerAttritbutes):
     
 
     def attribute_defense(self):
-          pass
+          #self.defense_attribute = defense_attribute
+          global defense_attribute
+          defense_attribute = 86
+          print("Defense: ", defense_attribute)
+          
+          return defense_attribute
 
     def overall_player(self):
-          pass
+        #defense_attribute = 
+        player_overall = ((self.speed + defense_attribute + self.shooting + passing_attribute)/4)
+        print ("Current overall:",player_overall )
         
 #~~~~~End of class SpeedyStrikers(SoccerPlayerAttritbutes)~~~~
 
 #~~~~~~~~~~~~End of class building~~~~~~~~~
 
 #~~~Beginning of Data adds~~~~~~
-RealPlayer = SpeedyStrikers('G.Games L.L.C.', 94,87)
+JohnSmith = SpeedyStrikers('John Smith', 94,87)
 
 #~~~End of Data adds~~~~~~
 
 #~~Print Testing~~
-RealPlayer.info_jersey()
-
-RealPlayer.attribute_speed()
-RealPlayer.attribute_shooting()
-RealPlayer.overall_player()
+JohnSmith.info_jersey()
+JohnSmith.attribute_defense()
+JohnSmith.attribute_passing()
+JohnSmith.attribute_speed()
+JohnSmith.attribute_shooting()
+JohnSmith.overall_player()
 
         
 #from the original abstraction class
